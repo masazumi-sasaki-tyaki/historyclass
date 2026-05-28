@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: A4 landscape;
+    margin: 15mm 20mm;
+    background-color: #fdfcf0;
+  }
+  body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    background-color: #fdfcf0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  
+  .container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .left-col {
+    float: left;
+    width: 38%;
+  }
+
+  .right-col {
+    float: right;
+    width: 60%;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  /* Left Cards */
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+  .card-title {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #002147;
+    margin-bottom: 15px;
+  }
+  .card-title .dot {
+    color: #d4af37;
+  }
+  .card-text {
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #595959;
+  }
+
+  /* Right Diagram Boxes */
+  .box {
+    border-radius: 12px;
+    padding: 25px;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .box-title {
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  
+  .box-subtitle {
+    font-size: 11pt;
+    opacity: 0.9;
+    margin-bottom: 12px;
+  }
+
+  .badge {
+    background-color: #d4af37;
+    color: #002147;
+    font-weight: bold;
+    padding: 6px 16px;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 10pt;
+  }
+  .badge-dark {
+    background-color: #002147;
+    color: white;
+    font-weight: bold;
+    padding: 6px 16px;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 10pt;
+  }
+
+  .box-heartland {
+    background-color: #002147;
+    color: white;
+  }
+  
+  .box-rimland {
+    background-color: #595959;
+    color: white;
+  }
+
+  .box-seapower {
+    background-color: #fdfcf0;
+    border: 3px solid #002147;
+    color: #002147;
+  }
+
+  /* Arrows */
+  .arrow-section {
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .arrow-label {
+    display: inline-block;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #595959;
+    border: 1px solid #595959;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: #fdfcf0;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+  .arrow-label-gold {
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    background-color: #fdfcf0;
+  }
+
+  .arrow-icon {
+    font-size: 18pt;
+    font-weight: bold;
+    color: #595959;
+    vertical-align: middle;
+  }
+  .arrow-icon-gold {
+    color: #d4af37;
+  }
+  
+  .desc-text {
+    font-size: 10pt;
+    margin-top: 10px;
+    color: #fdfcf0;
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- 左側：解説カード -->
+    <div class="left-col">
+      <div class="card" style="box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        <div class="card-title"><span class="dot">●</span> 陸と海の基本構造</div>
+        <div class="card-text">
+          初期の地政学は、個別の国家間の強弱よりも、ユーラシア大陸を中心とした<b>陸の勢力（LandPower）</b>と<b>海の勢力（SeaPower）</b>の構造的な衝突メカニズムを世界システムの土台として捉える。<br><br>
+        </div>
+      </div>
+
+      <div class="card" style="box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        <div class="card-title"><span class="dot">●</span> 構造的な膨張と牽制</div>
+        <div class="card-text">
+          LandPowerは歴史的に、不凍港や豊かな富を求めて内陸から沿岸部へと膨張しようとする性質を持つ。<br><br>
+          SeaPower側の最大の目標は、この膨張を中間のリムランドで食い止め、ユーラシア大陸が単一の巨大勢力によって支配されるのを防ぐことにある。
+        </div>
+      </div>
+    </div>
+
+    <!-- 右側：概念図 -->
+    <div class="right-col">
+      
+      <!-- Heartland -->
+      <div class="box box-heartland">
+        <div class="box-title">ハートランド <span style="font-size: 14pt; font-weight: normal; opacity: 0.8;">Heartland</span></div>
+        <div class="box-subtitle">ユーラシア内陸部・難攻不落の巨大要塞</div>
+        <div class="badge">LandPower (大陸勢力) の本拠地</div>
+      </div>
+
+      <!-- Arrow Down -->
+      <div class="arrow-section">
+        <span class="arrow-label arrow-label-gold">膨張（南下・海洋への渇望）</span>
+        <span class="arrow-icon arrow-icon-gold">↓</span>
+      </div>
+
+      <!-- Rimland -->
+      <div class="box box-rimland">
+        <div class="box-title">リムランド <span style="font-size: 14pt; font-weight: normal; opacity: 0.8;">Rimland</span></div>
+        <div class="box-subtitle">ユーラシア沿岸帯・世界最大の人口と富の集中地</div>
+        <div class="desc-text">陸と海が激突する「世界の運命を決める本舞台 / 緩衝地帯」</div>
+      </div>
+
+      <!-- Arrow Up -->
+      <div class="arrow-section">
+        <span class="arrow-icon">↑</span>
+        <span class="arrow-label">封じ込め・同盟（膨張の阻止）</span>
+      </div>
+
+      <!-- SeaPower -->
+      <div class="box box-seapower">
+        <div class="box-title">海洋世界 <span style="font-size: 14pt; font-weight: normal; opacity: 0.8;">Outer Islands / Ocean</span></div>
+        <div class="box-subtitle">ユーラシア外縁の島国・大陸（英・米・日など）</div>
+        <div class="badge-dark">SeaPower (海洋勢力) の基盤</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
