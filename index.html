@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帝国の経済モデルと結末</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#002147',
+                            cream: '#fdfcf0',
+                            gray: '#595959',
+                            gold: '#d4af37',
+                            white: '#ffffff',
+                            black: '#000000'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fdfcf0; /* Cream background */
+            color: #002147; /* Navy text */
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px -10px rgba(0, 33, 71, 0.1);
+        }
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="min-h-screen py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+
+    <div class="max-w-6xl w-full mx-auto">
+        <header class="text-center mb-16">
+            <h1 class="text-3xl md:text-4xl font-bold text-brand-navy tracking-wider mb-4 relative inline-block">
+                帝国の経済モデルと長期的帰結
+                <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-brand-gold"></span>
+            </h1>
+            <p class="text-brand-gray mt-6 text-sm md:text-base font-light tracking-widest uppercase">Comparative Analysis of Colonial Economies</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16">
+
+            <!-- イギリス -->
+            <div class="flex flex-col relative">
+                <!-- Abstract Header Shape -->
+                <div class="h-2 bg-brand-navy w-full mb-6"></div>
+                <h2 class="text-2xl font-bold text-brand-navy mb-8 flex items-center">
+                    <span class="w-8 h-8 rounded-full border-2 border-brand-gold flex items-center justify-center mr-3 text-sm font-bold text-brand-gold">UK</span>
+                    イギリス
+                </h2>
+
+                <div class="space-y-8 flex-grow">
+                    <!-- 利益 -->
+                    <div class="relative pl-6 border-l border-brand-gray/30 pb-2">
+                        <div class="absolute -left-1.5 top-2 w-3 h-3 rounded-full bg-brand-gold"></div>
+                        <h3 class="text-xs font-bold text-brand-gray uppercase tracking-widest mb-2">利益・経済モデル</h3>
+                        <p class="text-sm leading-relaxed text-brand-navy">奴隷貿易とプランテーションの高い投資収益率。<br><span class="font-medium">金融市場との連動</span>。</p>
+                    </div>
+
+                    <!-- コスト -->
+                    <div class="relative pl-6 border-l border-brand-gray/30 pb-2">
+                        <div class="absolute -left-1.5 top-2 w-3 h-3 rounded-full bg-brand-gray"></div>
+                        <h3 class="text-xs font-bold text-brand-gray uppercase tracking-widest mb-2">維持コスト</h3>
+                        <p class="text-sm leading-relaxed text-brand-navy">強大な海軍力と常備軍維持による巨額の防衛費。</p>
+                    </div>
+
+                    <!-- 結末 -->
+                    <div class="relative pl-6 border-l border-brand-navy pb-2 bg-brand-navy/5 p-4 rounded-r-lg mt-4 card-shadow">
+                        <div class="absolute -left-1.5 top-6 w-3 h-3 rounded-none bg-brand-navy transform rotate-45"></div>
+                        <h3 class="text-xs font-bold text-brand-navy uppercase tracking-widest mb-2">長期的結末</h3>
+                        <p class="text-sm leading-relaxed text-brand-navy font-medium">市民の高税負担。<br>外国資本投資・兵力によって国債等での破綻をなんとか回避。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- スペイン -->
+            <div class="flex flex-col relative">
+                <!-- Abstract Header Shape -->
+                <div class="h-2 bg-brand-gold w-full mb-6"></div>
+                <h2 class="text-2xl font-bold text-brand-navy mb-8 flex items-center">
+                    <span class="w-8 h-8 rounded-none border-2 border-brand-navy flex items-center justify-center mr-3 text-sm font-bold text-brand-navy transform rotate-45"><span class="-rotate-45 block">ES</span></span>
+                    スペイン
+                </h2>
+
+                <div class="space-y-8 flex-grow">
+                    <!-- 利益 -->
+                    <div class="relative pl-6 border-l border-brand-gray/30 pb-2">
+                        <div class="absolute -left-1.5 top-2 w-3 h-3 rounded-full bg-brand-gold"></div>
+                        <h3 class="text-xs font-bold text-brand-gray uppercase tracking-widest mb-2">利益・経済モデル</h3>
+                        <p class="text-sm leading-relaxed text-brand-navy">膨大な銀の採掘と独占的交易。<br><span class="font-medium">現地で利益分配</span>し残りを本国に。</p>
+                    </div>
+
+                    <!-- コスト -->
+                    <div class="relative pl-6 border-l border-brand-gray/30 pb-2">
+                        <div class="absolute -left-1.5 top-2 w-3 h-3 rounded-full bg-brand-gray"></div>
+                        <h3 class="text-xs font-bold text-brand-gray uppercase tracking-widest mb-2">維持コスト</h3>
+                        <p class="text-sm leading-relaxed text-brand-navy">海賊からの護送船団のコスト。</p>
+                    </div>
+
+                    <!-- 結末 -->
+                    <div class="relative pl-6 border-l border-brand-navy pb-2 bg-brand-navy/5 p-4 rounded-r-lg mt-4 card-shadow">
+                        <div class="absolute -left-1.5 top-6 w-3 h-3 rounded-none bg-brand-navy transform rotate-45"></div>
+                        <h3 class="text-xs font-bold text-brand-navy uppercase tracking-widest mb-2">長期的結末</h3>
+                        <p class="text-sm leading-relaxed text-brand-navy font-medium">輸入税による負担。財政移転によって現地内で富を効率利用し経営安定化。<br><span class="text-brand-gray">ただし本国には利益が還流せず。</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ポルトガル -->
+            <div class="flex flex-col relative">
+                <!-- Abstract Header Shape -->
+                <div class="h-2 bg-brand-gray w-full mb-6"></div>
+                <h2 class="text-2xl font-bold text-brand-navy mb-8 flex items-center">
+                    <span class="w-8 h-8 rounded-sm border-2 border-brand-gray flex items-center justify-center mr-3 text-sm font-bold text-brand-gray">PT</span>
+                    ポルトガル
+                </h2>
+
+                <div class="space-y-8 flex-grow">
+                    <!-- 利益 -->
+                    <div class="relative pl-6 border-l border-brand-gray/30 pb-2">
+                        <div class="absolute -left-1.5 top-2 w-3 h-3 rounded-full bg-brand-gold"></div>
+                        <h3 class="text-xs font-bold text-brand-gray uppercase tracking-widest mb-2">利益・経済モデル</h3>
+                        <p class="text-sm leading-relaxed text-brand-navy">一人当たり植民地貿易額で欧州首位。<br><span class="font-medium">ブラジルの砂糖・黄金</span>が主産物。</p>
+                    </div>
+
+                    <!-- コスト -->
+                    <div class="relative pl-6 border-l border-brand-gray/30 pb-2">
+                        <div class="absolute -left-1.5 top-2 w-3 h-3 rounded-full bg-brand-gray"></div>
+                        <h3 class="text-xs font-bold text-brand-gray uppercase tracking-widest mb-2">維持コスト</h3>
+                        <p class="text-sm leading-relaxed text-brand-navy">アフリカ沿岸からブラジル、インド洋にまたがる広大な交易費用。</p>
+                    </div>
+
+                    <!-- 結末 -->
+                    <div class="relative pl-6 border-l border-brand-navy pb-2 bg-brand-navy/5 p-4 rounded-r-lg mt-4 card-shadow">
+                        <div class="absolute -left-1.5 top-6 w-3 h-3 rounded-none bg-brand-navy transform rotate-45"></div>
+                        <h3 class="text-xs font-bold text-brand-navy uppercase tracking-widest mb-2">長期的結末</h3>
+                        <p class="text-sm leading-relaxed text-brand-navy font-medium">本国の制度的欠陥により利益がイノベーションに生かされず、<br><span class="text-brand-gray">先進国から落伍。</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-20 pt-8 border-t border-brand-gray/20 flex justify-center items-center space-x-8 text-xs text-brand-gray font-light tracking-wider">
+            <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-brand-gold mr-2"></span> 利益源泉</div>
+            <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-brand-gray mr-2"></span> 維持費用</div>
+            <div class="flex items-center"><span class="w-2 h-2 rounded-none bg-brand-navy transform rotate-45 mr-2"></span> 最終帰結</div>
+        </div>
+    </div>
+
+</body>
+</html>
